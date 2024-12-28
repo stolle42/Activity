@@ -1,0 +1,5 @@
+- flask basics
+- connect with database
+- check if i can download to phone
+- timer
+- wsgi server?
