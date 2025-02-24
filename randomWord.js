@@ -21,7 +21,6 @@
             "Ocean",
             "Football",
             "Grapes ",
-            "Bumblebee",
             "Music",
             "Book",
             "Lemon",
@@ -36,7 +35,7 @@
             "Bed",
             "Bird",
             "Rocket",
-            "River mto",
+            "River",
             "Smile",
             "Alligator",
             "Rabbit",
@@ -82,7 +81,6 @@
             "Hippo",
             "Calculating",
             "Duster",
-            "Candy",
             "Studying",
             "Jail",
             "Criminal",
@@ -145,9 +143,9 @@
             "Pants",
             "Boat",
             "Bug",
-            "B ag",
+            "Bag",
             "Back",
-            "Ears",
+            "Ear",
             "Box",
             "Face",
             "Night",
@@ -223,7 +221,6 @@
             "Angel",
             "Fork",
             "Bone",
-            "Candy",
             "Roof",
             "Drum",
             "Spider",
@@ -697,4 +694,5 @@
         function showRandomWord() {
             const randomIndex = Math.floor(Math.random() * words.length);
             document.getElementById("word").textContent = words[randomIndex];
+            startTimer();
         }
