@@ -1,7 +1,7 @@
 import re
-with open('index.html') as h:
+with open('template.html') as h:
     templateCode:str=h.read()
-matches=re.findall(r'{{\w+.js}}',templateCode)
+matches=re.findall(r'{{\w+.\w+}}',templateCode)
 for match in matches:
     with open(match.strip(r"{}")) as f:
         scriptCode=f.read()
