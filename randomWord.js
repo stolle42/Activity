@@ -690,9 +690,22 @@
 
         
         ];
+        let completedWordsList=document.getElementById("pastWordsList");
 
         function showRandomWord() {
             const randomIndex = Math.floor(Math.random() * words.length);
+            addWordToList(document.getElementById("word").textContent);
             document.getElementById("word").textContent = words[randomIndex];
             startTimer();
         }
+
+        function addWordToList(word) {
+            let newItem=document.createElement("li");
+            newItem.textContent=word;
+            completedWordsList.appendChild(newItem);
+        }
+        function clearWordList(){
+            completedWordsList.innerHTML="";
+        }
+
+

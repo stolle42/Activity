@@ -14,6 +14,7 @@ function updateTimer() {
 
 function startTimer() {
     if(timerRunning)return;//prevent multiple timers
+    clearWordList();
     timerRunning=true;
     countdown=6;
     document.getElementById("timer").textContent=countdown;
